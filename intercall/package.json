@@ -1,0 +1,24 @@
+{
+	"name": "intercall",
+	"version": "0.1.0",
+	"description": "Custom React hook for execution interruption.",
+	"author": "jake-daniels",
+	"repository": {
+		"url": "https://github.com/jake-daniels/intercall"
+	},
+	"license": "MIT",
+	"private": false,
+	"main": "build/index.js",
+	"peerDependencies": {
+		"react": ">=16.8.0",
+		"react-dom": ">=16.8.0"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [
+		"react",
+		"redux",
+		"hooks"
+	]
+}

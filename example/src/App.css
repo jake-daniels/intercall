@@ -1,0 +1,55 @@
+html,
+body {
+	background: whitesmoke;
+}
+* {
+	box-sizing: border-box;
+}
+
+.app {
+	padding: 6rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.foods {
+	margin-top: 2rem;
+	display: flex;
+}
+.food {
+	display: flex;
+	flex-direction: column;
+	margin: 0 3rem;
+	width: 12rem;
+}
+.picker {
+	margin-top: 2rem;
+}
+.item {
+	width: 100%;
+	padding: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+	background: rgb(219, 219, 219);
+	border: solid 1px transparent;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+.item:hover {
+	border: solid 1px grey;
+}
+button {
+	background: rgb(39, 73, 112);
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
