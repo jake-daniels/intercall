@@ -1,13 +1,13 @@
 import './App.css'
 import React from 'react'
-import useInterruptedCallback from 'intercall'
+import useIntercall from 'intercall'
 import FoodPicker, { Food } from './FoodPicker'
 
 export default function App() {
 	const [food, setFood] = React.useState<string>('')
 	const [foodPicker, setFoodPicker] = React.useState<Food | null>(null)
 
-	const [pickFood, onFoodPicked] = useInterruptedCallback(
+	const [pickFood, onFoodPicked] = useIntercall(
 		(type: Food) => {
 			setFoodPicker(type)
 		},
