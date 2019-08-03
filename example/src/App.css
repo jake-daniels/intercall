@@ -9,40 +9,45 @@ body {
 .app {
 	padding: 6rem;
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 }
-.foods {
-	margin-top: 2rem;
-	display: flex;
-}
-.food {
-	display: flex;
-	flex-direction: column;
-	margin: 0 3rem;
-	width: 12rem;
-}
-.picker {
-	margin-top: 2rem;
-}
-.item {
-	width: 100%;
-	padding: 1rem;
-	margin-top: 1rem;
+
+h2 {
+	width: 300px;
 	text-align: center;
-	background: rgb(219, 219, 219);
-	border: solid 1px transparent;
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: 600;
-	cursor: pointer;
 }
-.item:hover {
-	border: solid 1px grey;
-}
-button {
-	background: rgb(39, 73, 112);
+
+.food-picker {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000030;
+}
+
+.content {
+	z-index: 1;
+	background: white;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+button {
+	background: rgb(56, 94, 138);
+	width: 300px;
+	margin-bottom: 20px;
 	height: 3rem;
 	display: flex;
 	justify-content: center;
@@ -52,4 +57,7 @@ button {
 	border-radius: 4px;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+button:last-child {
+	margin: 0;
 }
