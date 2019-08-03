@@ -1,6 +1,6 @@
 {
 	"name": "intercall",
-	"version": "0.1.4",
+	"version": "0.1.6",
 	"description": "Custom React hook for execution interruption.",
 	"author": "jake-daniels",
 	"repository": {
